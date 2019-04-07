@@ -44,7 +44,7 @@ class AlbumRepo @Inject constructor(private val serviceGateway: ServiceGateway,
         liveAlbum.addSource(networkSource) { response ->
             response?.data?.let {
                 liveAlbum.removeSource(networkSource)
-                Completable.fromCallable { dao.insert(*it.toTypedArray()) }
+                Completable.fromCallable { dao.insertAll(it) }
                         .subscribeOn(Schedulers.newThread())
                         .subscribe()
             } ?: kotlin.run {
