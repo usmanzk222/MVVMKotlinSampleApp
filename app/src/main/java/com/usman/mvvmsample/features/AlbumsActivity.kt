@@ -1,10 +1,10 @@
 package com.usman.mvvmsample.features
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProvider
-import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import android.widget.Toast
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.usman.mvvmsample.R
 import com.usman.mvvmsample.core.BaseActivity
 import com.usman.mvvmsample.core.Status

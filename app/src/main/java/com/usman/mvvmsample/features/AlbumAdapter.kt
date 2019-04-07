@@ -1,10 +1,10 @@
 package com.usman.mvvmsample.features
 
-import android.databinding.DataBindingUtil
-import android.databinding.ViewDataBinding
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
+import androidx.recyclerview.widget.RecyclerView
 import com.usman.mvvmsample.R
 import com.usman.mvvmsample.databinding.ItemRecyclerBinding
 import com.usman.mvvmsample.features.model.Album

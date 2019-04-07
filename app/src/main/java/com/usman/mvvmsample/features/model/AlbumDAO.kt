@@ -1,9 +1,9 @@
 package com.usman.mvvmsample.features.model
 
-import android.arch.lifecycle.LiveData
-import android.arch.persistence.room.*
+import androidx.lifecycle.LiveData
+import androidx.room.Dao
+import androidx.room.Query
 import com.usman.mvvmsample.persistence.BaseDAO
-import io.reactivex.Completable
 
 /**
  * Created by Muhammad Usman on 2/15/2019.

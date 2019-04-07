@@ -1,9 +1,10 @@
 package com.usman.mvvmsample.persistence
 
-import android.arch.persistence.room.Delete
-import android.arch.persistence.room.Insert
-import android.arch.persistence.room.OnConflictStrategy
-import android.arch.persistence.room.Update
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Update
+
 
 /**
  * Created by Muhammad Usman on 3/8/2019.

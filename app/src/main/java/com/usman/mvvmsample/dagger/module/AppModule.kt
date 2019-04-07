@@ -1,9 +1,9 @@
 package com.usman.mvvmsample.dagger.module
 
 import android.app.Application
-import android.arch.persistence.room.Room
 import android.content.Context
 import android.content.SharedPreferences
+import androidx.room.Room
 import com.usman.mvvmsample.MVVMApplication
 import com.usman.mvvmsample.features.model.AlbumDAO
 import com.usman.mvvmsample.persistence.DNowDatabase
@@ -40,7 +40,7 @@ class AppModule {
     @Singleton
     @Provides
     fun provideDb(application: Application): DNowDatabase {
-        return Room.databaseBuilder(application, DNowDatabase::class.java, "dnow-db").build()
+        return Room.databaseBuilder(application, DNowDatabase::class.java, "mvvm-sample-db").build()
 
     }
 

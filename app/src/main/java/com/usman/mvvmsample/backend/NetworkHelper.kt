@@ -1,7 +1,7 @@
 package com.usman.mvvmsample.backend
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.usman.mvvmsample.core.BaseResponse
 import io.reactivex.Single
 import io.reactivex.SingleObserver

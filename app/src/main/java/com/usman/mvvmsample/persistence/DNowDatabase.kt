@@ -1,7 +1,7 @@
 package com.usman.mvvmsample.persistence
 
-import android.arch.persistence.room.Database
-import android.arch.persistence.room.RoomDatabase
+import androidx.room.Database
+import androidx.room.RoomDatabase
 import com.usman.mvvmsample.features.model.Album
 import com.usman.mvvmsample.features.model.AlbumDAO
 
@@ -10,7 +10,7 @@ import com.usman.mvvmsample.features.model.AlbumDAO
  */
 
 @Database(entities = [Album::class], version = 1, exportSchema = false)
-abstract class DNowDatabase:RoomDatabase() {
+abstract class DNowDatabase: RoomDatabase() {
 
     abstract fun getAlbumDao(): AlbumDAO
 }

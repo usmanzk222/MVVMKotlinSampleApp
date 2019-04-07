@@ -1,7 +1,7 @@
 package com.usman.mvvmsample.features.repository
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MediatorLiveData
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MediatorLiveData
 import com.usman.mvvmsample.apicalls.ServiceGateway
 import com.usman.mvvmsample.backend.NetworkHelper
 import com.usman.mvvmsample.core.BaseResponse

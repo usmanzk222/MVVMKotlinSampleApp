@@ -1,6 +1,6 @@
 package com.usman.mvvmsample.features.viewmodel
 
-import android.arch.lifecycle.LiveData
+import androidx.lifecycle.LiveData
 import com.usman.mvvmsample.core.BaseResponse
 import com.usman.mvvmsample.core.BaseViewModel
 import com.usman.mvvmsample.features.model.Album

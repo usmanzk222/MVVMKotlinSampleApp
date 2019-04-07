@@ -11,7 +11,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -32,15 +32,15 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
-    implementation "com.android.support:design:$support_version"
-    implementation "com.android.support:support-v4:$support_version"
-    implementation "com.android.support:appcompat-v7:$support_version"
-    implementation "com.android.support.constraint:constraint-layout:$constraint"
-    implementation "com.android.support:recyclerview-v7:$support_version"
+    implementation "com.google.android.material:material:$support_version"
+    implementation "androidx.legacy:legacy-support-v4:$support_version"
+    implementation "androidx.appcompat:appcompat:$support_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint"
+    implementation "androidx.recyclerview:recyclerview:$support_version"
 
-    kapt "android.arch.lifecycle:compiler:$lifecycle"
-    implementation "android.arch.lifecycle:runtime:$lifecycle"
-    implementation "android.arch.lifecycle:extensions:$lifecycle"
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle"
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle"
 
     implementation "com.squareup.retrofit2:retrofit:$retrofit"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit"
@@ -51,9 +51,9 @@ dependencies {
     implementation "com.squareup.retrofit2:adapter-rxjava2:$rxadapterversion"
 
     // Room Database
-    implementation "android.arch.persistence.room:runtime:$rootProject.room_version"
-    kapt "android.arch.persistence.room:compiler:$rootProject.room_version"
-    implementation "android.arch.persistence.room:rxjava2:$rootProject.room_version"
+    implementation "androidx.room:room-runtime:$rootProject.room_version"
+    kapt "androidx.room:room-compiler:$rootProject.room_version"
+    implementation "androidx.room:room-rxjava2:$rootProject.room_version"
 
     // dagger
     implementation "com.google.dagger:dagger:$dagger"
@@ -65,6 +65,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.mockito:mockito-core:2.10.0'
     testImplementation 'org.mockito:mockito-inline:2.10.0'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
 }

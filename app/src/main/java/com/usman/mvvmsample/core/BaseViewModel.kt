@@ -1,5 +1,5 @@
 package com.usman.mvvmsample.core
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.ViewModel
 
 open class BaseViewModel() : ViewModel()

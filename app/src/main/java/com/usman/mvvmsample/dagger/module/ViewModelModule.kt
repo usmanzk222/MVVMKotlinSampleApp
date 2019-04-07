@@ -1,7 +1,7 @@
 package com.usman.mvvmsample.dagger.module
 
-import android.arch.lifecycle.ViewModel
-import android.arch.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import com.usman.mvvmsample.dagger.ViewModelFactory
 import com.usman.mvvmsample.dagger.annotations.ViewModelKey
 import com.usman.mvvmsample.features.viewmodel.AlbumsViewModel
